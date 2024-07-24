@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle Responsive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#services">Nos Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="#contact" class="btn">Contactez-nous</a>
+        </div>
+    </header>
+    <section id="accueil" class="hero-section">
+        <div class="hero-content">
+            <div class="text-content">
+                <h1><span class="highlight">UNE URGENCE ?</span> <br><span class="highlight-orange">UN DÉPANNAGE</span> ?</h1>
+                <div class="image-content mobile-only">
+                    <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/depp.png" alt="Hero Image">
+                </div>
+                <p>Bienvenue chez <a href="#">NCIS Nico Info Services</a>, votre partenaire de confiance pour toutes vos solutions informatiques. Que vous soyez un particulier ou un professionnel, nous sommes là pour répondre à tous vos besoins, de la formation de base à la gestion des réseaux informatiques d'entreprise, en passant par la résolution des tracas informatiques quotidiens. Notre équipe d'experts est dédiée à vous fournir un service personnalisé et efficace, garantissant des solutions adaptées et performantes pour chaque situation. Faites confiance à <a href="#">NCIS Nico Info Services</a> pour vous accompagner dans tous vos projets technologiques.</p>
+                <div class="buttons">
+                    <a href="#contact" class="btn">Me joindre</a>
+                    <a href="#services" class="btn secondary">Nos services</a>
+                </div>
+            </div>
+            <div class="image-content desktop-only">
+                <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/depp.png" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    
+<section id="services" class="section">
+    <h2>Nos Domaines de Compétences</h2>
+    <div class="service-container">
+        <div class="service">
+            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/carte-mere.png" alt="Maintenance curative">
+            <div class="overlay">
+                <h3>Maintenance curative</h3>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/atelier.png" alt="Remise à niveau">
+            <div class="overlay">
+                <h3>Remise à niveau</h3>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/formation.png" alt="Assistance & Formation">
+            <div class="overlay">
+                <h3>Assistance & Formation</h3>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/recuperation.png" alt="Récupération de données">
+            <div class="overlay">
+                <h3>Récupération de données</h3>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/ventemati.png" alt="Vente de matériel">
+            <div class="overlay">
+                <h3>Vente de matériel</h3>
+            </div>
+        </div>
+        <div class="service">
+            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/desinf.png" alt="Désinfection virale">
+            <div class="overlay">
+                <h3>Désinfection virale</h3>
+            </div>
+        </div>
+    </div>
+</section>
+    <script>  document.querySelector('.mobile-menu-icon').addEventListener('click', function() {
+        document.querySelector('header nav ul').classList.toggle('open');
+    });
+      </script>
