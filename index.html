@@ -1,90 +1,288 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modèle Responsive</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCIS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--====================  Header Area Start ====================-->
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo">
+      <div class="header-logo">
+        <img src="images/logo.png" alt="Logo" />
+      </div>
+      <nav class="header-nav--desktop">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#services">Nos Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="btn-contact-us">
+          <a href="#contact" class="btn">Contactez-nous</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#a-propos">À propos</a></li>
-                <li><a href="#services">Nos Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cta">
-            <a href="#contact" class="btn">Contactez-nous</a>
+      </nav>
+      <div class="mobile-navigation-icon" id="mobile-menu-trigger">
+
+      </div>
+      <!-- <nav class="header-nav--mobile">
+        <div class="btn-contact-us">
+          <a href="#contact" class="btn">Contactez-nous</a>
         </div>
+      </nav> -->
     </header>
-    <section id="accueil" class="hero-section">
-        <div class="hero-content">
-            <div class="text-content">
-                <h1><span class="highlight">UNE URGENCE ?</span> <br><span class="highlight-orange">UN DÉPANNAGE</span> ?</h1>
-                <div class="image-content mobile-only">
-                    <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/depp.png" alt="Hero Image">
-                </div>
-                <p>Bienvenue chez <a href="#">NCIS Nico Info Services</a>, votre partenaire de confiance pour toutes vos solutions informatiques. Que vous soyez un particulier ou un professionnel, nous sommes là pour répondre à tous vos besoins, de la formation de base à la gestion des réseaux informatiques d'entreprise, en passant par la résolution des tracas informatiques quotidiens. Notre équipe d'experts est dédiée à vous fournir un service personnalisé et efficace, garantissant des solutions adaptées et performantes pour chaque situation. Faites confiance à <a href="#">NCIS Nico Info Services</a> pour vous accompagner dans tous vos projets technologiques.</p>
-                <div class="buttons">
-                    <a href="#contact" class="btn">Me joindre</a>
-                    <a href="#services" class="btn secondary">Nos services</a>
-                </div>
-            </div>
-            <div class="image-content desktop-only">
-                <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/depp.png" alt="Hero Image">
-            </div>
+    <!--====================  Header Area End ====================-->
+
+    <!--============ Hero Area Start ============-->
+    <section class="hero-section">
+      <div class="hero-wrapper">
+        <h1>
+          <span class="highlight highlight--primary">une urgence ?</span>
+          <span class="highlight highlight--secondary ml-8rem">un dépannage ?</span>
+        </h1>
+
+        <div class="hero-image">
+          <img src="images/depp.png" alt="Hero Image" />
         </div>
+
+        <div class="hero-text">
+          <p>
+            Bienvenue chez <a href="#">NCIS Nico Info Services</a>, votre
+            partenaire de confiance pour toutes vos solutions informatiques. Que
+            vous soyez un particulier ou un professionnel, nous sommes là pour
+            répondre à tous vos besoins, de la formation de base à la gestion
+            des réseaux informatiques d'entreprise, en passant par la résolution
+            des tracas informatiques quotidiens. Notre équipe d'experts est
+            dédiée à vous fournir un service personnalisé et efficace,
+            garantissant des solutions adaptées et performantes pour chaque
+            situation. Faites confiance à
+            <a href="#">NCIS Nico Info Services</a> pour vous accompagner dans
+            tous vos projets technologiques.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn primary">Me joindre</a>
+            <a href="#services" class="btn primary btn--desktop">Nos services</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image hero-image--desktop">
+        <img
+          src="images/depp.png"
+          alt="Hero Image"
+        />
+      </div>
     </section>
 
-    
-<section id="services" class="section">
-    <h2>Nos Domaines de Compétences</h2>
-    <div class="service-container">
-        <div class="service">
-            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/carte-mere.png" alt="Maintenance curative">
-            <div class="overlay">
-                <h3>Maintenance curative</h3>
-            </div>
+    <!--============ Hero Area End ============-->
+
+    <!--============ Service Area Start ============-->
+
+    <section class="services">
+      <h2 class="section-title">Nos Domaines de Compétences</h2>
+      <div class="service-wrapper">
+        <div class="service-card">
+          <img src="images/carte-mere.png" alt="Maintenance curative" />
+          <div class="overlay">
+            <h3>Maintenance curative</h3>
+          </div>
         </div>
-        <div class="service">
-            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/atelier.png" alt="Remise à niveau">
-            <div class="overlay">
-                <h3>Remise à niveau</h3>
-            </div>
+        <div class="service-card">
+          <img src="images/atelier.png" alt="Remise à niveau" />
+          <div class="overlay">
+            <h3>Remise à niveau</h3>
+          </div>
         </div>
-        <div class="service">
-            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/formation.png" alt="Assistance & Formation">
-            <div class="overlay">
-                <h3>Assistance & Formation</h3>
-            </div>
+        <div class="service-card">
+          <img src="images/formation.png" alt="Assistance & Formation" />
+          <div class="overlay">
+            <h3>Assistance & Formation</h3>
+          </div>
         </div>
-        <div class="service">
-            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/recuperation.png" alt="Récupération de données">
-            <div class="overlay">
-                <h3>Récupération de données</h3>
-            </div>
+        <div class="service-card">
+          <img src="images/recuperation.png" alt="Récupération de données" />
+          <div class="overlay">
+            <h3>Récupération de données</h3>
+          </div>
         </div>
-        <div class="service">
-            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/ventemati.png" alt="Vente de matériel">
-            <div class="overlay">
-                <h3>Vente de matériel</h3>
-            </div>
+        <div class="service-card">
+          <img src="images/vente-materiel.png" alt="Vente de matériel" />
+          <div class="overlay">
+            <h3>Vente de matériel</h3>
+          </div>
         </div>
-        <div class="service">
-            <img src="https://sandbox.ncisalsace.info/wp-content/uploads/2024/07/desinf.png" alt="Désinfection virale">
-            <div class="overlay">
-                <h3>Désinfection virale</h3>
-            </div>
+        <div class="service-card">
+          <img src="images/desinfection.png" alt="Désinfection virale" />
+          <div class="overlay">
+            <h3>Désinfection virale</h3>
+          </div>
         </div>
-    </div>
-</section>
-    <script>  document.querySelector('.mobile-menu-icon').addEventListener('click', function() {
-        document.querySelector('header nav ul').classList.toggle('open');
-    });
-      </script>
+      </div>
+    </section>
+
+    <!--============ Service Area End ============-->
+
+    <section class="techno-banner">
+      <div>
+        <img src="images/linux-os.png" alt="" srcset="" />
+      </div>
+      <div>
+        <img src="images/android-os.png" alt="" srcset="" />
+      </div>
+      <div>
+        <img src="images/windows-os.png" alt="" srcset="" />
+      </div>
+      <div>
+        <img src="images/mac-os.png" alt="" srcset="" />
+      </div>
+      <div>
+        <img src="images/linux-os.png" alt="" srcset="" />
+      </div>
+    </section>
+
+    <section class="service-detail-wrapper">
+      <h2 class="section-title">Nos Services Adaptés à vos besoins</h2>
+      <div class="service-detail">
+        <div>
+          <img src="images/picto-desktop.png" alt="" />
+        </div>
+        <h4>VENTE & INSTALLATION</h4>
+        <p>
+          NCIS NiCo Info Services, distributeur, installateur et formateur agréé
+          des solutions Ordissimo, simplifie l’accès à l’univers numérique sans
+          nécessiter de connaissances particulières en informatique. En
+          partenariat avec Wortmann.de, nous proposons du matériel informatique
+          européen de haute qualité. Nos équipements, destinés aux
+          professionnels et semi-professionnels, garantissent des performances
+          optimales et une fiabilité exceptionnelle pour tous vos besoins
+          technologiques.
+        </p>
+      </div>
+      <div class="service-detail">
+        <div>
+          <img src="images/picto-home.png" alt="" />
+        </div>
+        <h4>FORMATION SUR-MESURE</h4>
+        <p>
+          Que vous soyez un particulier ou un professionnel, NCIS Nico Info
+          Services est à votre disposition pour répondre à tous vos besoins en
+          matière de formation et de support informatique. Nous offrons des
+          formations de base adaptées aux débutants ainsi que des formations
+          avancées pour les réseaux informatiques d’entreprise. Notre expertise
+          couvre également la résolution des tracas informatiques quotidiens,
+          garantissant une assistance rapide et efficace.
+        </p>
+      </div>
+      <div class="service-detail">
+        <div>
+          <img src="images/picto-security.png" alt="" />
+        </div>
+        <h4>JE SUIS SOLIDAIRE</h4>
+        <p>
+          NCIS NiCo Info Services est une entreprise solidaire qui reverse 10%
+          de son chiffre d'affaires à des associations. Chaque année, nous
+          choisissons deux associations axées sur le sport et le handicap. En
+          choisissant nos services, vous contribuez à ces causes importantes.
+          Notre engagement reflète notre mission d'avoir un impact positif tout
+          en fournissant des services informatiques de qualité. Soutenez le
+          sport et l'inclusion des personnes handicapées avec NCIS NiCo Info
+          Services.SQS
+        </p>
+      </div>
+      <div class="service-detail">
+        <div>
+          <img src="images/picto-hand.png" alt="" />
+        </div>
+        <h4>SÉCURITÉ</h4>
+        <p>
+          La sécurité numérique est constamment menacée par des failles de
+          sécurité, des obsolescences et des comportements inadaptés. Chez NCIS
+          NiCo Info Services, nous sommes particulièrement sensibilisés à ces
+          problématiques et mettons tout en œuvre pour garantir à nos clients
+          une tranquillité d'esprit en matière de sécurité informatique et
+          réseau. En cas de problème, nous intervenons également pour vous
+          rétablir dans votre situation initiale, dans la mesure du possible,
+          afin de minimiser les impacts et de restaurer votre sérénité
+          numérique.
+        </p>
+      </div>
+      <div>
+        <button class="btn secondary">Je demande un devis</button>
+      </div>
+    </section>
+    <!--============ Service Area End ============-->
+
+    <section class="text-line-banner">
+      <div>Je suis solidaire</div>
+      <div>Je suis solidaire</div>
+      <div>Je suis solidaire</div>
+    </section>
+
+    <!--=========== About Area Start ==========-->
+    <section class="near-service-maps">
+      <h2 class="section-title">Notre service de proximité</h2>
+      <div class="maps">
+        <img src="/images/alsace-maps.png" alt="" />
+      </div>
+      <div class="description">
+        <p>
+          De la formation de base aux réseaux informatiques d’entreprise, en
+          passant par la résolution des tracas informatiques quotidiens, NCIS
+          Nico Info Services est à votre disposition pour répondre à tous vos
+          besoins que vous soyez un particulier ou un professionnel. Situé à
+          Benfeld et intervenant dans toute l’Alsace, notre service de proximité
+          vous garantit des solutions personnalisées et adaptées à chaque
+          situation.
+        </p>
+      </div>
+    </section>
+    <!--============ About Area End ============-->
+
+    <!--====================  Testimonial Section Start ====================-->
+    <section class="testimonial-slider">
+      <div class="testimonial-card">
+        <div class="author-name"></div>
+        <div class="stars"></div>
+        <div class="content"></div>
+        <div class="avatar"></div>
+      </div>
+    </section>
+    <!--==================== Testimonial Section End  ====================-->
+
+    <!--====================  footer area ====================-->
+    <footer>
+      <div class="footer-wrapper">
+        <nav class="footer-nav">
+          <ul>
+            <li>NCIS</li>
+            <li>NOS SERVICES</li>
+            <li>NOUS CONTACTER</li>
+            <li>SUIVEZ-NOUS SUR</li>
+          </ul>
+        </nav>
+        <div class="footer-logo">
+          <div class="logo">
+            <img src="images/logo-footer.png" alt="" />
+            <p>NCIS</p>
+          </div>
+          <div class="patner-reference">
+            <img src="images/partner_ref.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="privacy-bar">
+        <p>2024 NCIS. Tous droits réservés - Mentions légales - RGPD</p>
+      </div>
+    </footer>
+    <!--====================  End of footer area  ====================-->
+
+    <script>
+      document
+        .querySelector(".mobile-menu-icon")
+        .addEventListener("click", function () {
+          document.querySelector("header nav ul").classList.toggle("open");
+        });
+    </script>
+  </body>
+</html>
