@@ -12,7 +12,6 @@
 }
 
 * {
-  
   box-sizing: border-box;
 }
 
@@ -76,13 +75,18 @@ a.btn.large, button.large {
  font-size: 1.8rem;
 }
 
+a.btn.medium, button.medium {
+  width: 200px;
+  font-size: 1.6rem;
+}
+
 .btn.primary, button.primary {
   color: #fff;
   background-color: var(--main-primary-color);
   border-color: transparent;
 }
 
-.btn.btn--desktop {
+.btn--desktop {
   display: none;
 }
 
@@ -383,4 +387,56 @@ footer .privacy-bar p {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+/* Media queries for larger screens */
+
+/* Tablet styles */
+@media (min-width: 600px) {
+  
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+
+  .mobile-navigation-icon {
+    display: none;
+  }
+
+  .header-nav--desktop {
+    display: block;
+  }
+
+  .btn--desktop {
+    display: block;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-section .hero-wrapper, .hero-section .hero-image {
+    flex: 1;
+  }
+
+  .hero-image--mobile {
+    display: none;
+  }
+
+  .hero-image--desktop {
+    display: block;
+  }
+
+  /*============================== 
+    - Services
+===============================*/
+
+  .service-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .service-card {
+    width: 250px;
+  }
 }
