@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NCIS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/splide.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -24,7 +29,11 @@
         </div>
       </nav>
       <div class="mobile-navigation-icon" id="mobile-menu-trigger">
-
+        <span class="bar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
       </div>
       <!-- <nav class="header-nav--mobile">
         <div class="btn-contact-us">
@@ -39,7 +48,9 @@
       <div class="hero-wrapper">
         <h1>
           <span class="highlight highlight--primary">une urgence ?</span>
-          <span class="highlight highlight--secondary ml-8rem">un dépannage ?</span>
+          <span class="highlight highlight--secondary ml-7rem"
+            >un dépannage ?</span
+          >
         </h1>
 
         <div class="hero-image">
@@ -61,17 +72,16 @@
             tous vos projets technologiques.
           </p>
           <div class="hero-buttons">
-            <a href="#contact" class="btn primary">Me joindre</a>
-            <a href="#services" class="btn primary btn--desktop">Nos services</a>
+            <a href="#contact" class="btn primary large">Me joindre</a>
+            <a href="#services" class="btn primary btn--desktop"
+              >Nos services</a
+            >
           </div>
         </div>
       </div>
 
       <div class="hero-image hero-image--desktop">
-        <img
-          src="images/depp.png"
-          alt="Hero Image"
-        />
+        <img src="images/depp.png" alt="Hero Image" />
       </div>
     </section>
 
@@ -123,21 +133,26 @@
 
     <!--============ Service Area End ============-->
 
-    <section class="techno-banner">
-      <div>
-        <img src="images/linux-os.png" alt="" srcset="" />
-      </div>
-      <div>
-        <img src="images/android-os.png" alt="" srcset="" />
-      </div>
-      <div>
-        <img src="images/windows-os.png" alt="" srcset="" />
-      </div>
-      <div>
-        <img src="images/mac-os.png" alt="" srcset="" />
-      </div>
-      <div>
-        <img src="images/linux-os.png" alt="" srcset="" />
+    <section
+      id="software-carousel"
+      class="splide software-carousel"
+      aria-label="Software Logo"
+    >
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="images/linux-os.png" alt="" srcset="" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/android-os.png" alt="" srcset="" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/windows-os.png" alt="" srcset="" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/mac-os.png" alt="" srcset="" />
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -208,7 +223,7 @@
         </p>
       </div>
       <div>
-        <button class="btn secondary">Je demande un devis</button>
+        <button class="primary large">Je demande un devis</button>
       </div>
     </section>
     <!--============ Service Area End ============-->
@@ -240,14 +255,90 @@
     <!--============ About Area End ============-->
 
     <!--====================  Testimonial Section Start ====================-->
-    <section class="testimonial-slider">
-      <div class="testimonial-card">
-        <div class="author-name"></div>
-        <div class="stars"></div>
-        <div class="content"></div>
-        <div class="avatar"></div>
+
+    <section id="testimonial-slider" class="splide testimonial-slider" aria-label="Testimonial">
+      <h2 class="section-title">Ils nous ont fait confiance</h2>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="testimonial-card">
+              <div class="author-name">Kevin</div>
+              <div class="star-rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+              </div>
+              <div class="content">
+                <p>
+                  Très bonnes prestations et surtout à l'écoute et des conseils
+                  avertis et éclairés. NCIS NiCo Info Services est vraiment un
+                  artisan compétant et engagé socialement. Bravo.
+                </p>
+              </div>
+              <div class="avatar">
+                <img
+                  src="images/testimonial-avatar.png"
+                  alt="Avatar d'un utilisateur"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="testimonial-card">
+              <div class="author-name">Etienne</div>
+              <div class="star-rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <p>
+                  Très bonnes prestations et surtout à l'écoute et des conseils
+                  avertis et éclairés. NCIS NiCo Info Services est vraiment un
+                  artisan compétant et engagé socialement. Bravo.
+                </p>
+              </div>
+              <div class="avatar">
+                <img
+                  src="images/testimonial-avatar.png"
+                  alt="Avatar d'un utilisateur"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="testimonial-card">
+              <div class="author-name">Justin</div>
+              <div class="star-rating">
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star filled"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="content">
+                <p>
+                  Très bonnes prestations et surtout à l'écoute et des conseils
+                  avertis et éclairés. NCIS NiCo Info Services est vraiment un
+                  artisan compétant et engagé socialement. Bravo.
+                </p>
+              </div>
+              <div class="avatar">
+                <img
+                  src="images/testimonial-avatar.png"
+                  alt="Avatar d'un utilisateur"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
+
     <!--==================== Testimonial Section End  ====================-->
 
     <!--====================  footer area ====================-->
@@ -255,10 +346,10 @@
       <div class="footer-wrapper">
         <nav class="footer-nav">
           <ul>
-            <li>NCIS</li>
-            <li>NOS SERVICES</li>
-            <li>NOUS CONTACTER</li>
-            <li>SUIVEZ-NOUS SUR</li>
+            <li><a href="#">NCIS</a></li>
+            <li><a href="#">NOS SERVICES</a></li>
+            <li><a href="#">NOUS CONTACTER</a></li>
+            <li><a href="#">SUIVEZ-NOUS SUR</a></li>
           </ul>
         </nav>
         <div class="footer-logo">
@@ -277,12 +368,7 @@
     </footer>
     <!--====================  End of footer area  ====================-->
 
-    <script>
-      document
-        .querySelector(".mobile-menu-icon")
-        .addEventListener("click", function () {
-          document.querySelector("header nav ul").classList.toggle("open");
-        });
-    </script>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
