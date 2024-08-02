@@ -112,7 +112,7 @@ a.btn.medium, button.medium {
   color: #fff;
 }
 
-.btn--desktop {
+a.btn.btn--desktop {
   display: none;
 }
 
@@ -122,6 +122,7 @@ a.btn.medium, button.medium {
   position: relative;
   margin: 2.5rem 0;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 .section-title::after{
@@ -143,6 +144,8 @@ a.btn.medium, button.medium {
 
 .software-carousel {
   padding: var(--section-padding);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .star-rating {
@@ -228,8 +231,71 @@ header {
   border-radius: 2px;
 }
 
+.mobile-navigation-icon {
+  cursor: pointer;
+}
+
 .btn-contact-us {
 
+}
+
+
+.header-nav--mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.header-nav--mobile.active {
+  display: block;
+}
+
+.header-nav--mobile .menu-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--main-primary-color);
+}
+
+.header-nav--mobile .close-icon {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.header-nav--mobile .logo {
+  flex: 1;
+  text-align: center;
+}
+
+.header-nav--mobile .menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav--mobile .menu-items li {
+  padding: 0;
+}
+
+.header-nav--mobile .menu-items li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 1rem 5rem;
+}
+
+.header-nav--mobile .menu-items li a:hover {
+  background-color: var(--main-secondary-color);
+  /* padding: 15px 0; */
 }
 
 /*============================== 
@@ -352,6 +418,7 @@ header {
 .service-card .overlay p {
   margin: 0;
   padding: 0 2rem;
+  font-size: 1rem;
 }
 
 .service-card .overlay::after {
@@ -372,6 +439,10 @@ header {
   background-color: #fff;
   display: flex;
   justify-content: space-evenly;
+}
+
+.software-carousel .splide__slide {
+  max-width: 60px;
 }
 
 .service-details {
@@ -478,6 +549,26 @@ header {
   justify-content: center;
 }
 
+footer .desktop-footer {
+  display: none;
+}
+
+footer .mobile-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+footer .footer-logo .logo {
+  text-align: center;
+}
+
+footer .footer-logo .logo p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 footer .privacy-bar {
   background-color: #fff;
   padding: 0 5px;
@@ -523,6 +614,10 @@ footer .privacy-bar p {
 
   .btn--mobile {
     display: none;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 
   .mobile-navigation-icon {
@@ -638,7 +733,7 @@ footer .privacy-bar p {
   .software-carousel {
     padding: var(--desktop-section-padding);
     padding-top: 3rem;
-        padding-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 
   /*============================== 
@@ -656,6 +751,10 @@ footer .privacy-bar p {
 
   .service-card {
     width: 250px;
+  }
+
+  .service-card .overlay p {
+    font-size: 1.5rem;
   }
 
   .service-detail-grid {
