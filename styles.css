@@ -817,7 +817,7 @@ footer .privacy-bar p {
     padding-bottom: 5rem;
   }
 
-  .mobile-footer {
+  footer .footer-wrapper .mobile-footer {
     display: none;
   }
 
