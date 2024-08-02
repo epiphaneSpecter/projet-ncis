@@ -1,25 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#software-carousel", {
-    // heightRatio: 0.5,
-    // cover: true,
+  new Splide("#software-carousel", {    
     perPage: 4,
     breakpoints: {
       640: {
         perPage: 3,
       },
     },
-    gap: 25,
+    gap: 250,
   }).mount();
 
   new Splide("#testimonial-slider", {
-    perPage: 4,
+    perPage: 3,
+    pagination: false,
     breakpoints: {
       640: {
         perPage: 1,
       },
     },
-    gap: 25,
-    width: 400,
-    padding: 50,
+    gap: 95,
   }).mount();
+
+  const links = document.querySelectorAll('nav.header-nav--desktop a.menu');
+    for (const link of links) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 });

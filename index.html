@@ -19,13 +19,16 @@
       </div>
       <nav class="header-nav--desktop">
         <ul>
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#a-propos">À propos</a></li>
-          <li><a href="#services">Nos Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class="menu" href="#depannage">Dépannage</a></li>
+          <li>
+            <a class="menu" href="#domaine-de-competence"
+              >Domaine de compétence</a
+            >
+          </li>
+          <li><a class="menu" href="#nos-services">Nos services</a></li>
         </ul>
         <div class="btn-contact-us">
-          <a href="#contact" class="btn">Contactez-nous</a>
+          <a href="#" class="btn primary">Me contacter</a>
         </div>
       </nav>
       <div class="mobile-navigation-icon" id="mobile-menu-trigger">
@@ -44,7 +47,7 @@
     <!--====================  Header Area End ====================-->
 
     <!--============ Hero Area Start ============-->
-    <section class="hero-section">
+    <section id="depannage" class="hero-section">
       <div class="hero-wrapper">
         <h1>
           <span class="highlight highlight--primary">une urgence ?</span>
@@ -72,8 +75,10 @@
             tous vos projets technologiques.
           </p>
           <div class="hero-buttons">
-            <a href="#contact" class="btn primary medium">Me joindre</a>
-            <a href="#services" class="btn primary medium btn--desktop"
+            <a href="#!" class="btn primary medium btn--mobile">Me joindre</a>
+            <a
+              href="#nos-services"
+              class="btn primary medium btn--desktop outline"
               >Nos services</a
             >
           </div>
@@ -89,43 +94,49 @@
 
     <!--============ Service Area Start ============-->
 
-    <section class="services">
+    <section id="domaine-de-competence" class="services">
       <h2 class="section-title">Nos Domaines de Compétences</h2>
       <div class="service-wrapper">
         <div class="service-card">
           <img src="images/carte-mere.png" alt="Maintenance curative" />
           <div class="overlay">
-            <h3>Maintenance curative</h3>
+            <h3 class="title">Maintenance curative</h3>
+            <p class="description">Assurez la réparation rapide et efficace de vos équipements grâce à notre service de maintenance curative de pointe.</p>
           </div>
         </div>
         <div class="service-card">
           <img src="images/atelier.png" alt="Remise à niveau" />
           <div class="overlay">
-            <h3>Remise à niveau</h3>
+            <h3 class="title">Remise à niveau</h3>
+            <p class="description">Optimisez les performances de vos systèmes avec notre service de remise à niveau complet et professionnel.</p>
           </div>
         </div>
         <div class="service-card">
           <img src="images/formation.png" alt="Assistance & Formation" />
           <div class="overlay">
-            <h3>Assistance & Formation</h3>
+            <h3 class="title">Assistance & Formation</h3>
+            <p class="description">Bénéficiez de notre expertise avec des services d'assistance personnalisée et des programmes de formation adaptés à vos besoins.</p>
           </div>
         </div>
         <div class="service-card">
           <img src="images/recuperation.png" alt="Récupération de données" />
           <div class="overlay">
-            <h3>Récupération de données</h3>
+            <h3 class="title">Récupération de données</h3>
+            <p class="description">Restaurez vos informations perdues grâce à nos services de récupération de données sécurisés et rapides.</p>
           </div>
         </div>
         <div class="service-card">
           <img src="images/vente-materiel.png" alt="Vente de matériel" />
           <div class="overlay">
-            <h3>Vente de matériel</h3>
+            <h3 class="title">Vente de matériel</h3>
+            <p class="description">Découvrez notre gamme complète de matériel de qualité, disponible à des prix compétitifs pour répondre à tous vos besoins.</p>
           </div>
         </div>
         <div class="service-card">
           <img src="images/desinfection.png" alt="Désinfection virale" />
           <div class="overlay">
-            <h3>Désinfection virale</h3>
+            <h3 class="title">Désinfection virale</h3>
+            <p class="description">Protégez votre environnement contre les virus avec nos solutions de désinfection avancées et efficaces.</p>
           </div>
         </div>
       </div>
@@ -152,78 +163,96 @@
           <li class="splide__slide">
             <img src="images/mac-os.png" alt="" srcset="" />
           </li>
+          <li class="splide__slide">
+            <img src="images/word.png" alt="" srcset="" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/excel.png" alt="" srcset="" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/power-point.png" alt="" srcset="" />
+          </li>
+          <li class="splide__slide">
+            <img src="images/libre-office.png" alt="" srcset="" />
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="service-detail-wrapper">
+    <section id="nos-services" class="service-details">
       <h2 class="section-title">Nos Services Adaptés à vos besoins</h2>
-      <div class="service-detail">
-        <div>
-          <img src="images/picto-desktop.png" alt="" />
+      <div class="service-detail-wrapper">
+        <div class="service-detail-grid">
+          <div class="service-detail">
+            <div>
+              <img src="images/picto-desktop.png" alt="" />
+            </div>
+            <h4>VENTE & INSTALLATION</h4>
+            <p>
+              <a href="#">NCIS Nico Info Services</a>, distributeur,
+              installateur et formateur agréé des solutions Ordissimo, simplifie
+              l’accès à l’univers numérique sans nécessiter de connaissances
+              particulières en informatique. En partenariat avec Wortmann.de,
+              nous proposons du matériel informatique européen de haute qualité.
+              Nos équipements, destinés aux professionnels et
+              semi-professionnels, garantissent des performances optimales et
+              une fiabilité exceptionnelle pour tous vos besoins technologiques.
+            </p>
+          </div>
+          <div class="service-detail">
+            <div>
+              <img src="images/picto-home.png" alt="" />
+            </div>
+            <h4>FORMATION SUR-MESURE</h4>
+            <p>
+              Que vous soyez un particulier ou un professionnel, NCIS Nico Info
+              Services est à votre disposition pour répondre à tous vos besoins
+              en matière de formation et de support informatique. Nous offrons
+              des formations de base adaptées aux débutants ainsi que des
+              formations avancées pour les réseaux informatiques d’entreprise.
+              Notre expertise couvre également la résolution des tracas
+              informatiques quotidiens, garantissant une assistance rapide et
+              efficace.
+            </p>
+          </div>
+          <div class="service-detail">
+            <div>
+              <img src="images/picto-security.png" alt="" />
+            </div>
+            <h4>JE SUIS SOLIDAIRE</h4>
+            <p>
+              NCIS NiCo Info Services est une entreprise solidaire qui reverse
+              10% de son chiffre d'affaires à des associations. Chaque année,
+              nous choisissons deux associations axées sur le sport et le
+              handicap. En choisissant nos services, vous contribuez à ces
+              causes importantes. Notre engagement reflète notre mission d'avoir
+              un impact positif tout en fournissant des services informatiques
+              de qualité. Soutenez le sport et l'inclusion des personnes
+              handicapées avec NCIS NiCo Info Services.SQS
+            </p>
+          </div>
+          <div class="service-detail">
+            <div>
+              <img src="images/picto-hand.png" alt="" />
+            </div>
+            <h4>SÉCURITÉ</h4>
+            <p>
+              La sécurité numérique est constamment menacée par des failles de
+              sécurité, des obsolescences et des comportements inadaptés. Chez
+              NCIS NiCo Info Services, nous sommes particulièrement sensibilisés
+              à ces problématiques et mettons tout en œuvre pour garantir à nos
+              clients une tranquillité d'esprit en matière de sécurité
+              informatique et réseau. En cas de problème, nous intervenons
+              également pour vous rétablir dans votre situation initiale, dans
+              la mesure du possible, afin de minimiser les impacts et de
+              restaurer votre sérénité numérique.
+            </p>
+          </div>
         </div>
-        <h4>VENTE & INSTALLATION</h4>
-        <p>
-          <a href="#">NCIS Nico Info Services</a>, distributeur, installateur et formateur agréé
-          des solutions Ordissimo, simplifie l’accès à l’univers numérique sans
-          nécessiter de connaissances particulières en informatique. En
-          partenariat avec Wortmann.de, nous proposons du matériel informatique
-          européen de haute qualité. Nos équipements, destinés aux
-          professionnels et semi-professionnels, garantissent des performances
-          optimales et une fiabilité exceptionnelle pour tous vos besoins
-          technologiques.
-        </p>
-      </div>
-      <div class="service-detail">
+
         <div>
-          <img src="images/picto-home.png" alt="" />
+          <button class="primary large">Je demande un devis</button>
         </div>
-        <h4>FORMATION SUR-MESURE</h4>
-        <p>
-          Que vous soyez un particulier ou un professionnel, NCIS Nico Info
-          Services est à votre disposition pour répondre à tous vos besoins en
-          matière de formation et de support informatique. Nous offrons des
-          formations de base adaptées aux débutants ainsi que des formations
-          avancées pour les réseaux informatiques d’entreprise. Notre expertise
-          couvre également la résolution des tracas informatiques quotidiens,
-          garantissant une assistance rapide et efficace.
-        </p>
-      </div>
-      <div class="service-detail">
-        <div>
-          <img src="images/picto-security.png" alt="" />
-        </div>
-        <h4>JE SUIS SOLIDAIRE</h4>
-        <p>
-          NCIS NiCo Info Services est une entreprise solidaire qui reverse 10%
-          de son chiffre d'affaires à des associations. Chaque année, nous
-          choisissons deux associations axées sur le sport et le handicap. En
-          choisissant nos services, vous contribuez à ces causes importantes.
-          Notre engagement reflète notre mission d'avoir un impact positif tout
-          en fournissant des services informatiques de qualité. Soutenez le
-          sport et l'inclusion des personnes handicapées avec NCIS NiCo Info
-          Services.SQS
-        </p>
-      </div>
-      <div class="service-detail">
-        <div>
-          <img src="images/picto-hand.png" alt="" />
-        </div>
-        <h4>SÉCURITÉ</h4>
-        <p>
-          La sécurité numérique est constamment menacée par des failles de
-          sécurité, des obsolescences et des comportements inadaptés. Chez NCIS
-          NiCo Info Services, nous sommes particulièrement sensibilisés à ces
-          problématiques et mettons tout en œuvre pour garantir à nos clients
-          une tranquillité d'esprit en matière de sécurité informatique et
-          réseau. En cas de problème, nous intervenons également pour vous
-          rétablir dans votre situation initiale, dans la mesure du possible,
-          afin de minimiser les impacts et de restaurer votre sérénité
-          numérique.
-        </p>
-      </div>
-      <div>
-        <button class="primary large">Je demande un devis</button>
       </div>
     </section>
     <!--============ Service Area End ============-->
@@ -237,104 +266,194 @@
     <!--=========== About Area Start ==========-->
     <section class="near-service-maps">
       <h2 class="section-title">Notre service de proximité</h2>
-      <div class="maps">
-        <img src="/images/alsace-maps.png" alt="" />
-      </div>
-      <div class="description">
-        <p>
-          De la formation de base aux réseaux informatiques d’entreprise, en
-          passant par la résolution des tracas informatiques quotidiens, <a href="#">NCIS Nico Info Services</a> est à votre disposition pour répondre à tous vos
-          besoins que vous soyez un particulier ou un professionnel. Situé à
-          Benfeld et intervenant dans toute l’Alsace, notre service de proximité
-          vous garantit des solutions personnalisées et adaptées à chaque
-          situation.
-        </p>
+      <div class="near-service-maps-wrapper">
+        <div class="maps">
+          <img src="/images/alsace-maps.png" alt="" />
+        </div>
+        <div class="description">
+          <p>
+            De la formation de base aux réseaux informatiques d’entreprise, en
+            passant par la résolution des tracas informatiques quotidiens,
+            <a href="#">NCIS Nico Info Services</a> est à votre disposition pour
+            répondre à tous vos besoins que vous soyez un particulier ou un
+            professionnel. Situé à Benfeld et intervenant dans toute l’Alsace,
+            notre service de proximité vous garantit des solutions
+            personnalisées et adaptées à chaque situation.
+          </p>
+        </div>
       </div>
     </section>
     <!--============ About Area End ============-->
 
     <!--====================  Testimonial Section Start ====================-->
 
-    <section id="testimonial-slider" class="splide testimonial-slider" aria-label="Testimonial">
+    <section
+      id="testimonial-slider"
+      class="splide testimonial-slider"
+      aria-label="Testimonial"
+    >
       <h2 class="section-title">Ils nous ont fait confiance</h2>
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="testimonial-card">
-              <div class="author-name">Kevin</div>
-              <div class="star-rating">
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
+      <div class="testimonial-slider-wrapper">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="author-name">Kevin</div>
+                <div class="star-rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                </div>
+                <div class="content">
+                  <p>
+                    Très bonnes prestations et surtout à l'écoute et des
+                    conseils avertis et éclairés.
+                    <a href="#">NCIS Nico Info Services</a> est vraiment un
+                    artisan compétant et engagé socialement. Bravo.
+                  </p>
+                </div>
+                <div class="avatar">
+                  <img
+                    src="images/testimonial-avatar.png"
+                    alt="Avatar d'un utilisateur"
+                  />
+                </div>
               </div>
-              <div class="content">
-                <p>
-                  Très bonnes prestations et surtout à l'écoute et des conseils
-                  avertis et éclairés. <a href="#">NCIS Nico Info Services</a> est vraiment un
-                  artisan compétant et engagé socialement. Bravo.
-                </p>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="author-name">Etienne</div>
+                <div class="star-rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="content">
+                  <p>
+                    Très bonnes prestations et surtout à l'écoute et des
+                    conseils avertis et éclairés.
+                    <a href="#">NCIS Nico Info Services</a> est vraiment un
+                    artisan compétant et engagé socialement. Bravo.
+                  </p>
+                </div>
+                <div class="avatar">
+                  <img
+                    src="images/testimonial-avatar.png"
+                    alt="Avatar d'un utilisateur"
+                  />
+                </div>
               </div>
-              <div class="avatar">
-                <img
-                  src="images/testimonial-avatar.png"
-                  alt="Avatar d'un utilisateur"
-                />
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="author-name">Justin</div>
+                <div class="star-rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="content">
+                  <p>
+                    Très bonnes prestations et surtout à l'écoute et des
+                    conseils avertis et éclairés.
+                    <a href="#">NCIS Nico Info Services</a> est vraiment un
+                    artisan compétant et engagé socialement. Bravo.
+                  </p>
+                </div>
+                <div class="avatar">
+                  <img
+                    src="images/testimonial-avatar.png"
+                    alt="Avatar d'un utilisateur"
+                  />
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="testimonial-card">
-              <div class="author-name">Etienne</div>
-              <div class="star-rating">
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="author-name">Justin</div>
+                <div class="star-rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="content">
+                  <p>
+                    Très bonnes prestations et surtout à l'écoute et des
+                    conseils avertis et éclairés.
+                    <a href="#">NCIS Nico Info Services</a> est vraiment un
+                    artisan compétant et engagé socialement. Bravo.
+                  </p>
+                </div>
+                <div class="avatar">
+                  <img
+                    src="images/testimonial-avatar.png"
+                    alt="Avatar d'un utilisateur"
+                  />
+                </div>
               </div>
-              <div class="content">
-                <p>
-                  Très bonnes prestations et surtout à l'écoute et des conseils
-                  avertis et éclairés. <a href="#">NCIS Nico Info Services</a> est vraiment un
-                  artisan compétant et engagé socialement. Bravo.
-                </p>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="author-name">Justin</div>
+                <div class="star-rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="content">
+                  <p>
+                    Très bonnes prestations et surtout à l'écoute et des
+                    conseils avertis et éclairés.
+                    <a href="#">NCIS Nico Info Services</a> est vraiment un
+                    artisan compétant et engagé socialement. Bravo.
+                  </p>
+                </div>
+                <div class="avatar">
+                  <img
+                    src="images/testimonial-avatar.png"
+                    alt="Avatar d'un utilisateur"
+                  />
+                </div>
               </div>
-              <div class="avatar">
-                <img
-                  src="images/testimonial-avatar.png"
-                  alt="Avatar d'un utilisateur"
-                />
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="author-name">Justin</div>
+                <div class="star-rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="content">
+                  <p>
+                    Très bonnes prestations et surtout à l'écoute et des
+                    conseils avertis et éclairés.
+                    <a href="#">NCIS Nico Info Services</a> est vraiment un
+                    artisan compétant et engagé socialement. Bravo.
+                  </p>
+                </div>
+                <div class="avatar">
+                  <img
+                    src="images/testimonial-avatar.png"
+                    alt="Avatar d'un utilisateur"
+                  />
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="testimonial-card">
-              <div class="author-name">Justin</div>
-              <div class="star-rating">
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star filled"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="content">
-                <p>
-                  Très bonnes prestations et surtout à l'écoute et des conseils
-                  avertis et éclairés. <a href="#">NCIS Nico Info Services</a> est vraiment un
-                  artisan compétant et engagé socialement. Bravo.
-                </p>
-              </div>
-              <div class="avatar">
-                <img
-                  src="images/testimonial-avatar.png"
-                  alt="Avatar d'un utilisateur"
-                />
-              </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -343,21 +462,58 @@
     <!--====================  footer area ====================-->
     <footer>
       <div class="footer-wrapper">
-        <nav class="footer-nav">
-          <ul>
-            <li><a href="#">NCIS</a></li>
-            <li><a href="#">NOS SERVICES</a></li>
-            <li><a href="#">NOUS CONTACTER</a></li>
-            <li><a href="#">SUIVEZ-NOUS SUR</a></li>
-          </ul>
-        </nav>
-        <div class="footer-logo">
-          <div class="logo">
-            <img src="images/logo-footer.png" alt="" />
-            <p>NCIS</p>
+        <div class="mobile-footer">
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">NCIS</a></li>
+              <li><a href="#">NOS SERVICES</a></li>
+              <li><a href="#">NOUS CONTACTER</a></li>
+              <li><a href="#">SUIVEZ-NOUS SUR</a></li>
+            </ul>
+          </nav>
+          <div class="footer-logo">
+            <div class="logo">
+              <img src="images/logo-footer.png" alt="" />
+              <p>NCIS</p>
+            </div>
+            <div class="patner-reference">
+              <img src="images/partner_ref.png" alt="" />
+            </div>
           </div>
-          <div class="patner-reference">
-            <img src="images/partner_ref.png" alt="" />
+        </div>
+        <div class="desktop-footer">
+          <div class="logo">
+            <img src="assets/logo-footer.png" alt="" />
+          </div>
+          <div class="slogan">
+            <h4>NCIS</h4>
+            <p>Un service de proximité</p>
+          </div>
+          <div class="nos-services">
+            <h4>NOS SERVICES</h4>
+            <ul>
+              <li>Maintenance curative</li>
+              <li>Remise à niveau</li>
+              <li>Assistance et formation</li>
+              <li>Désinfection virale</li>
+              <li>Vente de matériel</li>
+            </ul>
+          </div>
+          <div class="contact-us">
+            <h4>NOUS CONTACTER</h4>
+            <ul>
+              <li><i class="fas fa-solid fa-phone"></i>06 17 75 29 35</li>
+              <li>Rue du Général de Gaulle</li>
+              <li><i class="fas fa-map-marker-alt"></i>67230 Benfeld</li>
+              <li>ncis6768@outlook.fr</li>
+            </ul>
+          </div>
+          <div class="follow-us">
+            <h4>SUIVEZ-NOUS SUR</h4>
+            <div class="patner-reference">
+              <p>PARTENAIRE RÉFÉRENCÉ DE</p>
+              <img src="images/partner_ref.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
