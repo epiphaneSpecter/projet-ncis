@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         perPage: 3,
         gap: 70
       },
+      765: {
+        perPage: 3,
+        gap: 70
+      },
     },
     gap: 250,
   }).mount();
@@ -16,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       600: {
         perPage: 1,
+      },
+      765: {
+        perPage: 2,
       },
     },
     gap: 65,
